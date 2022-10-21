@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('polices/quicksand/Quicksand-Light.otf');
+}
+
+body {
+    font-family: Quicksand;
+    color: white;
+    background-image: url('images/coolback.png');
+    text-align: center;
+    font-size: 150%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+ }
+ 
+body::-webkit-scrollbar-track {
+    background:purple;
+ }
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: pink;
+    border-radius: 20px;
+ }
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-size: 1800% 1800%;
+    height: 4750px;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgba(152,68,183,1) 51%, 
+          rgba(255,53,127,1) 100%
+    );  
+    animation: AnimateBG 10s ease infinite;
+
+    border-radius: 20px;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+button {
+    border-radius: 20px;
+    background-color: rgb(80, 112, 252);
+    color: white;
+    border: 1px solid white;
+    font-family: Quicksand;
+    font-size: 15px;
+    width: 100px;
+    height: 25px;
+}
+
+button:hover {
+    background-color: white;
+    color: purple;
+    transition: 0.25s;
+}
+
+input {
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: Quicksand;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(80, 112, 252);
+    height: 25px;
+    font-size: 17px;
+}
+
+#converters {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+#euro2usd, #usd2euro, #euro2pound, #pound2euro, #euro2chf, #chf2euro, #euro2yen, #yen2euro, #usd2pound, #pound2usd, #usd2chf, #chf2usd, #usd2yen, #yen2usd {
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px; 
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 6px 12px -2px,
+    rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+    padding: 10px;
+}
